@@ -24,7 +24,7 @@ var WEBHOOK_URL = "http://example.com:3000/hooks/xxx/yyy";
 var ROCKETCHATBOT = "rocket.cat";
 
 // users bridged from rocket chat to matrix will appear as USER_PREFIX + rocket_chat_event.user_name + ":" + HOMESERVER_DOMAIN
-var USER_PREFIX = "@rocketchat_"; 
+var USER_PREFIX = "@_rocketchat_"; 
 var HOMESERVER_DOMAIN = "example.com";
 var HOMESERVER = "https://example.com:8448";
 
