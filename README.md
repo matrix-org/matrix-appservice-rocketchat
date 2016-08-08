@@ -4,14 +4,18 @@ A Rocket Chat application service
 This is currently a very barebones bridge, it just does basic text in pre-enumerated channels.
 
 To install:
-```
+
+```bash
 $ npm install
+```
 
 Generate a registration file by running:
 
+```bash
 $ node app.js -r -u "http://localhost:9000"```
+```
 
-You might want to restrict the AS to a room. This is done by adding the following to the config:
+You might want to restrict the AS to a room. This is done by adding the following to the config::
 
   rooms:
     - exclusive: false
@@ -20,7 +24,8 @@ You might want to restrict the AS to a room. This is done by adding the followin
 Reference the registration yaml file from your homeserver's homeserver.yaml config and restart the server to pick it up.
 
 Start your application service:
-```
+
+```bash
 $ node app.js -p 9000
 ```
 
