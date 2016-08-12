@@ -26,7 +26,7 @@ You might want to restrict the AS to a room. This is done by adding the followin
 Then generate a registration file by running:
 
 ```bash
-$ node app.js -r -c config.yaml -u "http://localhost:9000"```
+$ node app.js -r -c config.yaml -u "http://localhost:9000"
 ```
 
 Reference the registration yaml file from your homeserver's homeserver.yaml config and restart the server to pick it up.
