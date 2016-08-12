@@ -1,0 +1,17 @@
+rocket_chat_webhook_port: 8003
+bot_username: "rocket.cat"
+username_prefix: "_rocketchat_"
+
+homeserver:
+  url: "http://localhost:8008"
+  server_name: "my.server"
+
+# Optional
+tls:
+  key_file: /path/to/tls.key
+  crt_file: /path/to/tls.crt
+
+rooms:
+  - matrix_room_id: "!xxx:matrix.org"
+    webhook_url: "http://example.com:3000/hooks/xxx/yyy"
+
