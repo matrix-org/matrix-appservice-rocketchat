@@ -3,21 +3,11 @@
 // node app.js -r -u "http://localhost:9000" 
 // add the registration file to the app_service_config_files array in your synapse config
 // start the bridge by running:
-// node app.js -p 9000
+// node app.js -p 9000 -c config.yaml
 
-/*var http = require("http");
-var https = require("https");
-var qs = require('querystring');
-var rp = require('request-promise');
-const fs = require('fs');
-var bridge;
-*/
 var qs = require("querystring");
 var requestLib = require("request");
 var rp = require('request-promise');
-//var Rooms = require("./lib/rooms");
-//var SlackHookHandler = require("./lib/slack-hook-handler");
-//var MatrixHandler = require("./lib/matrix-handler");
 var bridgeLib = require("matrix-appservice-bridge");
 var bridge;
 
