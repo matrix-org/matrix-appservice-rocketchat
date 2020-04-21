@@ -17,12 +17,12 @@ To set up on the Rocket Chat side:
 To set up on the Matrix side:
 Create a config.yaml file (there's a skeleton one in config/config.sample.yaml). Add the homeserver details, the port of the listener, the Matrix Room ID and the Rocket Chat webhook URL to this file.
 
-You might want to restrict the AS to a room. This is done by adding the following to the config::
-
+You might want to restrict the AS to a room. This is done by adding the following to the config:
+```
   rooms:
     - exclusive: false
       regex: "!xxx:matrix.org"
-
+```
 Then generate a registration file by running:
 
 ```bash
